@@ -1,0 +1,21 @@
+.user-info{
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    font-size: 20px;
+    font-weight: 300;
+}
+.title span{
+    font-size: 22px;
+    font-weight: 500;
+}
+.avatar-wrap{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.avatar-wrap img{
+    width: 100%;
+}
