@@ -24,5 +24,6 @@ const UserListItem = ({user}) => {
             </td>
         </Fragment>
     )
+
 }
 export default UserListItem;

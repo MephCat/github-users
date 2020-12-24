@@ -23,9 +23,16 @@ const loadingInfo = (loading) => {
         payload: loading
     }
 }
+const reposLoader = (loading) => {
+    return {
+        type: 'USER_REPOS',
+        payload: loading
+    }
+}
 export {
     usersLoader,
     usersSearch,
     userLoader,
-    loadingInfo
+    loadingInfo,
+    reposLoader
 }

@@ -21,4 +21,7 @@ export default class GithubApiService {
     getUser = (name) => {
         return this.getResource(`/users/${name}`);
     }
+    getRepos = (name) => {
+        return this.getResource(`/users/${name}/repos`);
+    }
 }
