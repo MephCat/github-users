@@ -29,4 +29,7 @@ h3{
     line-height: 27px;
     color: #192A3E;
     text-decoration: none;
+    border: none;
+    background: #fff;
+    cursor: pointer;
 }

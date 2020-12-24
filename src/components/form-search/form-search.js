@@ -22,7 +22,6 @@ class  FormSearch extends Component {
             const {GithubApiService, usersSearch} = this.props;
             await GithubApiService.searchUsers(this.state.label)
                 .then( data => {
-                    console.log(data.items)
                     usersSearch(data.items)
                 })
         }

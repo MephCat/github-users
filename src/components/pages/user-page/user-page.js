@@ -7,18 +7,17 @@ import Spinner from "../../spinner/spinner";
 import ReposList from '../../repos-list';
 
 import './user-page.css'
-import {Link} from "react-router-dom";
 
 class UserPage extends Component {
 
     componentDidMount() {
-        this.getUser()
+        this.getUser();
     }
     getUser() {
         const userName = this.props.match.params.id;
         const {GithubApiService, userLoader} = this.props;
         GithubApiService.getUser(userName).then( (data) => {
-            return userLoader(data)
+            return userLoader(data);
         })
     }
     render (){
@@ -32,12 +31,12 @@ class UserPage extends Component {
         return (
             <div className='user-page'>
                 <div className="top">
-                    <a href='#' className='go-back-link' onClick={(e) => {
+                    <button className='go-back-link' onClick={(e) => {
                         e.preventDefault();
                         window.history.back();
                     }}>
                         Go Back
-                    </a>
+                    </button>
                 </div>
                 <div className="user-info">
                     <div className="avatar-wrap">
