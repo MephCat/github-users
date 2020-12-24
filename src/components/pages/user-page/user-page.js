@@ -7,6 +7,7 @@ import Spinner from "../../spinner/spinner";
 import ReposList from '../../repos-list';
 
 import './user-page.css'
+import {Link} from "react-router-dom";
 
 class UserPage extends Component {
 
@@ -30,6 +31,14 @@ class UserPage extends Component {
         }
         return (
             <div className='user-page'>
+                <div className="top">
+                    <a href='#' className='go-back-link' onClick={(e) => {
+                        e.preventDefault();
+                        window.history.back();
+                    }}>
+                        Go Back
+                    </a>
+                </div>
                 <div className="user-info">
                     <div className="avatar-wrap">
                         <img src={user.avatar_url} alt={user.login} />

@@ -19,7 +19,6 @@ export class ReposList extends Component {
         const {GithubApiService,userLogin} = this.props;
         const repos = GithubApiService.getRepos(userLogin)
             repos.then( (data) => {
-                console.log(data)
                 this.setState({
                     loading: false,
                     repos: data
